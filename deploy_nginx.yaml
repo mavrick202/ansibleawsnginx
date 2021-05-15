@@ -14,9 +14,7 @@
            - clone
 
        - name: Install Nginx Server
-         apt: >
-           name=nginx
-           state=present
+         shell: sudo apt install nginx -y
          tags:
            - install
        
