@@ -24,7 +24,7 @@
        - name: Copy the files to index destination folder.
          copy: >
             src=/tmp/dockertest1/index.html
-            dest=/var/www/html/index.nginx-debian.html
+            dest=/usr/share/nginx/html/index.html
             remote_src=yes
             owner=root
             group=root
@@ -37,7 +37,7 @@
          ignore_errors: yes
          copy: >
             src=/tmp/dockertest1/style.css
-            dest=/var/www/html/style.css
+            dest=/usr/share/nginx/html/style.css
             remote_src=yes
             owner=root
             group=root
@@ -48,7 +48,7 @@
        - name: Copy the javascript files to  destination folder.
          copy: >
             src=/tmp/dockertest1/scorekeeper.js
-            dest=/var/www/html/scorekeeper.js
+            dest=/usr/share/nginx/html/scorekeeper.js
             remote_src=yes
             owner=root
             group=root
