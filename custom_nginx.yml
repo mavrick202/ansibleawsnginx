@@ -4,4 +4,4 @@
   become: yes
   become_user: root
   roles:
-    - /etc/ansible/roles/sreeveerdevops.custom_nginx
+    - sreeveerdevops.custom_nginx
