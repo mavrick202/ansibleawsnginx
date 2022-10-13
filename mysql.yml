@@ -3,4 +3,4 @@
   become: yes
   become_user: root
   roles:
-    - { role: geerlingguy.mysql }
+    - /home/ubuntu/.ansible/roles/geerlingguy.mysql
