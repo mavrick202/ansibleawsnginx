@@ -1,6 +1,6 @@
 ---
 - name: Deploy Custom Nginx Role To Servers
-  hosts: allservers
+  hosts: all
   become: yes
   become_user: root
   roles:
