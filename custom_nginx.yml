@@ -4,4 +4,4 @@
   become: yes
   become_user: root
   roles:
-    - sreeveerdevops.custom_nginx
+    - role: sreeveerdevops.custom_nginx
