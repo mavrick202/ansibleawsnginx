@@ -3,4 +3,4 @@
   become: yes
   become_user: root
   roles:
-    - /etc/ansible/roles/mysql
+    - mysql
