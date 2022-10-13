@@ -1,0 +1,7 @@
+---
+- name: Deploy Custom Nginx Role To Servers
+  hosts: allservers
+  become: yes
+  become_user: root
+  roles:
+    - { role: sreeveerdevops.custom_nginx }
