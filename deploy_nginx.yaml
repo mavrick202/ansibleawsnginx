@@ -32,6 +32,17 @@
          ignore_errors: yes #Will Proceed to next task even it failed.
          tags:
            - index
+       - name: Copy the files to index destination folder 2.
+         copy: >
+            src=/tmp/dockertest1/index.html
+            dest=/usr/share/nginx/html/index.html
+            remote_src=yes
+            owner=root
+            group=root
+            mode=0644
+         ignore_errors: yes #Will Proceed to next task even it failed.
+         tags:
+           - index
        
        - name: Copy the style files to  destination folder.
          ignore_errors: yes
